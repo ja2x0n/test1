@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class CustomerController {
     private final CustomerRepository customerRepository;
 
-    // Get List of Customers
+    // Get Customers List
     @GetMapping("/")
     public String getCustomer(Model model){
         model.addAttribute("customers",customerRepository.findAll());
